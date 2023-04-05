@@ -1,0 +1,43 @@
+[
+    {
+      "id": "01",
+      "name": "Netflix",
+      "img": "01_netflix.png"
+    },
+    {
+      "id": "02",
+      "name": "HBO",
+      "img": "02_hbo.png"
+    },
+    {
+      "id": "03",
+      "name": "Amazon Prime",
+      "img": "03_amazon.png"
+    },
+    {
+      "id": "04",
+      "name": "Disney Plus",
+      "img": "04_disneyplus.png"
+    },
+    {
+      "id": "05",
+      "name": "Apple TV",
+      "img": "05_apple.png"
+    },
+    {
+      "id": "06",
+      "name": "Movistar Plus",
+      "img": "06_movistar.png"
+    },
+    {
+      "id": "07",
+      "name": "Filmin",
+      "img": "07_filmin.png"
+    },
+    {
+      "id": "08",
+      "name": "Sky Showtime",
+      "img": "08_sky.png"
+    }
+  ]
+
