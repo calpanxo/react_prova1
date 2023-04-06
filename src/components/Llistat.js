@@ -5,16 +5,18 @@ import "./css/llistat.css";
 export default function Llistat() {
   const [checkedState, setCheckedState] = useState(new Array(8).fill(false));
   const [active, setActive] = useState(false);
-  console.log(checkedState);
-
+ 
   const handleOnChange = (position) => {
     const updatedCheckedState = checkedState.map((item, index) =>
+  
       index === position ? !item : item
+      
     );   
    
     setCheckedState(updatedCheckedState);
     setActive(!active);
-    console.log(active);
+    console.log(updatedCheckedState);
+    
    
   };
 
