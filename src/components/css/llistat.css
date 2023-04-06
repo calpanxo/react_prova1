@@ -6,11 +6,10 @@
 }
 
 .logo {
-  opacity: 0.90;
+  opacity: 0.30;
   
 }
 
-.logo.active
-{
+.logo.active{
   opacity: 1;
 }

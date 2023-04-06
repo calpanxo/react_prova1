@@ -10,10 +10,12 @@ export default function Llistat() {
   const handleOnChange = (position) => {
     const updatedCheckedState = checkedState.map((item, index) =>
       index === position ? !item : item
-    );
-    setActive(!active);
+    );   
+   
     setCheckedState(updatedCheckedState);
-    console.log(position);
+    setActive(!active);
+    console.log(active);
+   
   };
 
   /* <img className={`grid-item ${active?"active":""}`} onClick={() => setActive(!active)}*/ 
