@@ -14,6 +14,6 @@
   opacity: 1;
 }
 
-.logo.active .logo{
+.logo:active .logo{
   opacity: 1;
 }

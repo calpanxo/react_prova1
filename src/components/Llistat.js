@@ -1,11 +1,11 @@
 import React, {useState } from "react";
-import data from "./data/data.json";
+import data from "./data/plataformes.json";
 import "./css/llistat.css";
 
 export default function Llistat() {
   const [checkedState, setCheckedState] = useState(new Array(8).fill(false));
-  const [active, setActive] = useState(false);
- 
+  const [active, setActive] = useState(true);
+  console.log(checkedState);
   const handleOnChange = (position) => {
     const updatedCheckedState = checkedState.map((item, index) =>
   
@@ -15,9 +15,7 @@ export default function Llistat() {
    
     setCheckedState(updatedCheckedState);
     setActive(!active);
-    console.log(updatedCheckedState);
-    
-   
+       
   };
 
   /* <img className={`grid-item ${active?"active":""}`} onClick={() => setActive(!active)}*/ 
@@ -30,13 +28,13 @@ export default function Llistat() {
           return (
             <div className="grid-item">
               
-              <img className="logo"
+              <img className={`logo ${active?"active":""}`} 
                 width={100}
                 height={100}
                 id={id}
                 src={`${process.env.PUBLIC_URL}/img/${img}`}
                 alt={name}
-                onClick={() => handleOnChange(index)}
+                onClick={() => handleOnChange(index)} 
               
               />
             </div>
